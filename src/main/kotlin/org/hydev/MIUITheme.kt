@@ -20,7 +20,7 @@ data class MIUITheme internal constructor(
     companion object {
         private const val THEME_API_URL = "https://thm.market.xiaomi.com/thm/download/v2/"
 
-        fun newMIUITheme(themeUrl: String, miuiVersion: MIUIVersion = MIUIVersion.V11): MIUITheme? {
+        fun get(themeUrl: String, miuiVersion: MIUIVersion = MIUIVersion.V11): MIUITheme? {
             val okHttpClient = OkHttpClient()
 
             // Make a request and execute it, and get the string of response body.
