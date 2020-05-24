@@ -1,0 +1,76 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>MIUITheme - MIUIThemeTools</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">MIUIThemeTools</a>&nbsp;/&nbsp;<a href="../index.html">org.hydev</a>&nbsp;/&nbsp;<a href="./index.html">MIUITheme</a><br/>
+<br/>
+<h1>MIUITheme</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">MIUITheme</span></code>
+<p>The data model of apiData from MIUI theme API.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-m-i-u-i-version/index.html">MIUIVersion</a></h4>
+</td>
+<td>
+<p>The enum of MIUI version request string.</p>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">MIUIVersion</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="download-url.html">downloadUrl</a></h4>
+</td>
+<td>
+<p>raw data, encoded in url format.</p>
+<code><span class="keyword">val </span><span class="identifier">downloadUrl</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="file-hash.html">fileHash</a></h4>
+</td>
+<td>
+<p>length is 40, lower case.</p>
+<code><span class="keyword">val </span><span class="identifier">fileHash</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="file-name.html">fileName</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">fileName</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="file-size.html">fileSize</a></h4>
+</td>
+<td>
+<p>unit is bytes.</p>
+<code><span class="keyword">val </span><span class="identifier">fileSize</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="get.html">get</a></h4>
+</td>
+<td>
+<p>Get MIUITheme via theme share link, can also specify MIUI version.</p>
+<code><span class="keyword">fun </span><span class="identifier">get</span><span class="symbol">(</span><span class="identifier" id="org.hydev.MIUITheme.Companion$get(kotlin.String, org.hydev.MIUITheme.MIUIVersion)/themeUrl">themeUrl</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.hydev.MIUITheme.Companion$get(kotlin.String, org.hydev.MIUITheme.MIUIVersion)/miuiVersion">miuiVersion</span><span class="symbol">:</span>&nbsp;<span class="identifier">MIUIVersion</span>&nbsp;<span class="symbol">=</span>&nbsp;MIUIVersion.V11<span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MIUITheme</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

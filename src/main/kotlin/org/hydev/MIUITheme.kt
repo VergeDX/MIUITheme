@@ -8,6 +8,13 @@ import okhttp3.OkHttpClient
 import okhttp3.Request
 import java.net.URLDecoder
 
+/**
+ * The data model of apiData from MIUI theme API.
+ *
+ * @property downloadUrl raw data, encoded in url format.
+ * @property fileHash length is 40, lower case.
+ * @property fileSize unit is bytes.
+ */
 @Serializable
 data class MIUITheme internal constructor(
     val downloadUrl: String,
@@ -20,6 +27,13 @@ data class MIUITheme internal constructor(
     companion object {
         private const val THEME_API_URL = "https://thm.market.xiaomi.com/thm/download/v2/"
 
+        /**
+         * Get MIUITheme via theme share link, can also specify MIUI version.
+         *
+         * @param themeUrl is share url from MIUI theme store
+         * @param miuiVersion default is MIUI v11, you can also choose v10 - v12.
+         * @return MIUITheme object or null
+         */
         fun get(themeUrl: String, miuiVersion: MIUIVersion = MIUIVersion.V11): MIUITheme? {
             val okHttpClient = OkHttpClient()
 
@@ -39,6 +53,9 @@ data class MIUITheme internal constructor(
         }
     }
 
+    /**
+     * The enum of MIUI version request string.
+     */
     enum class MIUIVersion {
         V10, V11, V12;
 
