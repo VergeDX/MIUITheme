@@ -1,4 +1,5 @@
 # MIUITheme
+[![](https://jitpack.io/v/VergeDX/MIUITheme.svg)](https://jitpack.io/#VergeDX/MIUITheme)  
 A library for MIUI theme download link, file name, etc.
 
 ## Usage
